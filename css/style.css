@@ -1,0 +1,560 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: Playfair;
+    src: url("/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+body {
+    font-size: 16px;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    background-color:#ffcbcb ;
+}
+
+/* navi */
+
+nav li {
+    padding: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #ffb5b5;
+    position: absolute;
+    z-index: 1;
+}
+
+.overmij {
+    left: 60%;
+}
+
+.portfolio {
+    left: 70%;
+}
+
+.contact {
+    left: 80%;
+}
+
+/* profielfoto */
+
+#profielfoto {
+    top: 35%;
+    left: 25%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* titeltekst */
+
+.voorstellen {
+    font-style: italic;
+    font-size: 3em;
+    font-family: Playfair;
+    color: white;
+    left: 38%;
+    top: 35%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.ondertitel {
+    font-size: 1em;
+    font-family: 'Montserrat';
+    color: white;
+    left: 30%;
+    top: 60%;
+    width: 45%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* slideshow */
+
+.slide {
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(255, 181, 181, 0.7) 0%, rgba(19, 39, 67, 0.7)100%);
+    display: inline-block;
+    top: 0%;
+}
+
+.slide:active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(255, 181, 181, 0.7) 0%, rgba(19, 39, 67, 0.7)100%);
+}
+
+.foto {
+    display: none;
+    width: 100%;
+    height: 600px;
+    top: 0%;
+}
+
+.clear {
+    clear: both;
+}
+
+/* main blauwblok */
+
+.main {
+    background-color: white;
+    width: 100%;
+}
+
+.mainblok {
+    background-color: #132743;
+    margin: 0 auto;
+    width: 95%;
+    position: absolute;
+    height: 900px;
+    left: 2%;
+    top: 80%;
+}
+
+/* video  */
+
+.kadervideo {
+    position: relative;
+}
+
+.video {
+    position: relative;
+    margin: 0 auto;
+    width: 88%;
+}
+
+.video-js {
+    margin: 0 auto;
+    width: 100%;
+    height: 640px;
+    background-color: white;
+}
+
+.rewindbutton {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 30%;
+    margin-top: 290px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+}
+
+.playbuttons {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 45%;
+    margin-top: 275px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+}
+
+.playbuttons.active .play {
+    background-image: url(../img/play@2x.png);
+}
+
+.play {
+    background-image: url(../img/play@2x.png);
+    width: 100%;
+    height: 60%;
+    background-size: 100%;
+    background-position: center;
+}
+
+.video:hover .rewindbutton, .video:hover .playbuttons, .video:hover .check {
+    display: block;
+}
+
+/* portfolio */
+
+.portfoliogalerij {
+    color: #ffb5b5;
+    font-size: 1em;
+    font-family: 'Montserrat';
+    padding-top: 100px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+    width: 10%;
+}
+
+/* gallerij */
+
+.rijeen {
+    width: 90%;
+    background: none;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.groot {
+    visibility: hidden;
+    font-size: 2em;
+    font-family: Playfair;
+    font-style: italic;
+    color: white;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.een:hover .groot {
+    visibility: visible;
+}
+
+.twee:hover .groot {
+    visibility: visible;
+}
+
+.drie:hover .groot {
+    visibility: visible;
+}
+
+.vier:hover .groot {
+    visibility: visible;
+}
+
+.vijf:hover .groot {
+    visibility: visible;
+}
+
+.zes:hover .groot {
+    visibility: visible;
+}
+
+.klein {
+    visibility: hidden;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    margin-top: 15px;
+    color: white;
+    padding-left: 25px;
+}
+
+.een:hover .klein {
+    visibility: visible;
+}
+
+.twee:hover .klein {
+    visibility: visible;
+}
+
+.drie:hover .klein {
+    visibility: visible;
+}
+
+.vier:hover .klein {
+    visibility: visible;
+}
+
+.vijf:hover .klein {
+    visibility: visible;
+}
+
+.zes:hover .klein {
+    visibility: visible;
+}
+
+.een:hover {
+    visibility: visible;
+    background: rgb(255, 181, 181);
+    background: linear-gradient(90deg, rgba(255, 181, 181, 0.654499299719888) 0%, rgba(64, 112, 136, 0.80015756302521) 50%, rgba(19, 39, 67, 1) 100%);
+}
+
+.twee:hover {
+    visibility: visible;
+    background: rgb(255, 181, 181);
+    background: linear-gradient(90deg, rgba(255, 181, 181, 0.654499299719888) 0%, rgba(64, 112, 136, 0.80015756302521) 50%, rgba(19, 39, 67, 1) 100%);
+}
+
+.drie:hover {
+    visibility: visible;
+    background: rgb(255, 181, 181);
+    background: linear-gradient(90deg, rgba(255, 181, 181, 0.654499299719888) 0%, rgba(64, 112, 136, 0.80015756302521) 50%, rgba(19, 39, 67, 1) 100%);
+}
+
+.vier:hover {
+    visibility: visible;
+    background: rgb(255, 181, 181);
+    background: linear-gradient(90deg, rgba(255, 181, 181, 0.654499299719888) 0%, rgba(64, 112, 136, 0.80015756302521) 50%, rgba(19, 39, 67, 1) 100%);
+}
+
+.vijf:hover {
+    visibility: visible;
+    background: rgb(255, 181, 181);
+    background: linear-gradient(90deg, rgba(255, 181, 181, 0.654499299719888) 0%, rgba(64, 112, 136, 0.80015756302521) 50%, rgba(19, 39, 67, 1) 100%);
+}
+
+.zes:hover {
+    visibility: visible;
+    background: rgb(255, 181, 181);
+    background: linear-gradient(90deg, rgba(255, 181, 181, 0.654499299719888) 0%, rgba(64, 112, 136, 0.80015756302521) 50%, rgba(19, 39, 67, 1) 100%);
+}
+
+.rijtwee {
+    width: 90%;
+    background: none;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.een {
+    height: 350px;
+    width: 350px;
+    float: left;
+    margin: 20px 50px 20px 0px;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/glam1.jpg);
+}
+
+.twee {
+    height: 350px;
+    width: 350px;
+    float: left;
+    margin: 20px 50px 20px 0px;
+    ;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/glam2.jpg);
+}
+
+.drie {
+    height: 350px;
+    width: 350px;
+    float: left;
+    margin: 20px 50px 20px 0px;
+    ;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/glam3.jpg);
+}
+
+.vier {
+    height: 350px;
+    width: 350px;
+    float: left;
+    margin: 20px 50px 20px 0px;
+    ;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/glam4.jpg);
+}
+
+.vijf {
+    height: 350px;
+    width: 350px;
+    float: left;
+    margin: 20px 50px 20px 0px;
+    ;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/glam5.jpg);
+}
+
+.zes {
+    height: 350px;
+    width: 350px;
+    float: left;
+    margin: 20px 50px 20px 0px;
+    ;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    background-image: url(../img/glam6.jpg);
+}
+
+/* knop */
+
+.portfolioknop {
+    font-size: 1em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #ffb5b5;
+    width: 200px;
+    background-color: #132743;
+    padding: 15px 15px;
+    cursor: pointer;
+    border: 0px;
+    margin: 50px auto 0 auto;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    margin-top: 200px;
+    background: #132743;
+}
+
+.einde {
+    font-style: italic;
+    font-size: 3em;
+    font-family: Playfair;
+    color: white;
+    padding-top: 100px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.regels {
+    width: 300px;
+    background: #ffb5b5;
+    padding: 20px 0px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 38%;
+    transition: 1s ease-in-out;
+}
+
+.contactknop {
+    font-size: 1em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #132743;
+    width: 80px;
+    background-color: #ffb5b5;
+    padding: 15px 15px;
+    cursor: pointer;
+    border: 0px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+.regels h3, .regels p {
+    text-align: center;
+}
+
+.regels h3 {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    padding: 20px;
+    color: white;
+}
+
+input, textarea {
+    width: 280px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.accordion {
+    color: white;
+    background: #ffb5b5;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    padding: 20px;
+}
+
+.knopindrukken {
+    display: none;
+    overflow: hidden;
+}
+
+input[type=text], select, textarea {
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: #132743;
+    padding: 15px;
+    border: #ffb5b5;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* sketchpagina */
+
+.balk {
+    height: 400px;
+   margin-top: -50px;
+}
+
+.terugknop {
+    font-size: 1em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #ffb5b5;
+    width: 200px;
+    background-color: #132743;
+    padding: 15px 15px;
+    cursor: pointer;
+    border: 0px;
+    margin: 50px auto 0 auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+h4 {
+    font-size: 3em;
+    font-family: 'Montserrat';
+    color: white;
+    left: 43%;
+    top: 20%;
+    position: absolute;
+    z-index: 1;
+}
+
+.uitleg{
+    font-size: 1em;
+    font-family: 'Montserrat';
+    color: white;
+    left: 28%;
+    top: 25%;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 600px;
+
+}
+
+
